@@ -7,12 +7,15 @@ There are 2 input images namely content image and style image that are used to g
   </b>
 </p><br>
 Alpha and beta are hyperparameters which are used to provide weights to each type of loss i.e these parameters are used to control how much of content/style we want to inherit in the generated image.<br>
+
 **VGG-19**<br>
 ![alt text](https://www.researchgate.net/profile/Clifford-Yang/publication/325137356/figure/fig2/AS:670371271413777@1536840374533/llustration-of-the-network-architecture-of-VGG-19-model-conv-means-convolution-FC-means.jpg)
+
 ## Extract Content:
 * Along the processing hierarchy of the network, the input image is transformed into representations that increasingly care about the actual content of the image compared to its detailed pixel values.
 * We therefore refer to the feature responses in higher layers of the network as the content representation.
 * The second part of fourth (4_2) convolutional layer of pre-trained VGG-19 network is used as content extractor.
+
 ## Extract Style:
 * To obtain a representation of the style of an input image, we use correlations between the different filter responses over the spatial extent of the feature maps. We obtain a stationary, multi-scale representaion of the input image, which captures its texture information but not the global arrangement.
 * The correlations between feature maps is known as gram matrix.
