@@ -9,7 +9,7 @@ There are 2 input images namely content image and style image that are used to g
 Alpha and beta are hyperparameters which are used to provide weights to each type of loss i.e these parameters are used to control how much of content/style we want to inherit in the generated image.<br>
 
 **VGG-19**<br>
-![alt text](https://www.researchgate.net/profile/Clifford-Yang/publication/325137356/figure/fig2/AS:670371271413777@1536840374533/llustration-of-the-network-architecture-of-VGG-19-model-conv-means-convolution-FC-means.jpg)
+![VGG-19 layers](https://www.researchgate.net/profile/Clifford-Yang/publication/325137356/figure/fig2/AS:670371271413777@1536840374533/llustration-of-the-network-architecture-of-VGG-19-model-conv-means-convolution-FC-means.jpg)
 
 ## Extract Content:
 * Along the processing hierarchy of the network, the input image is transformed into representations that increasingly care about the actual content of the image compared to its detailed pixel values.
