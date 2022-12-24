@@ -25,6 +25,6 @@ Alpha and beta are hyperparameters which are used to provide weights to each typ
 Let's say we have function Content loss which takes in three arguments as input that are content image C, generated image G and the layer L whose activation we are going to use to compute loss.<br>
 <p align='center'>
   <b>
-    $$L_content \left( C,G,L \right) =  1 \div 2 \sum_{ij} \left( a \left[ L \right] \left( C \right)_(ij) - a \left[ L \right] \left( G \right)_(ij) \right)^2$$
+    $$L_content \left( C,G,L \right) =  1 \div 2 \sum_{ij} \left( a \left[ L \right] \left( C \right)_{ij} - a \left[ L \right] \left( G \right)_{ij} \right)^2$$
   </b>
 </p><br>
