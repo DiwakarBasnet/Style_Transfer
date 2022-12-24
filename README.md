@@ -9,7 +9,7 @@ There are 2 input images namely content image and style image that are used to g
 Alpha and beta are hyperparameters which are used to provide weights to each type of loss i.e these parameters are used to control how much of content/style we want to inherit in the generated image.<br>
 
 **VGG-19**<br>
-![VGG-19 layers](https://www.researchgate.net/profile/Clifford-Yang/publication/325137356/figure/fig2/AS:670371271413777@1536840374533/llustration-of-the-network-architecture-of-VGG-19-model-conv-means-convolution-FC-means.jpg)
+![VGG-19 layers](https://raw.githubusercontent.com/DiwakarBasnet/Style_Transfer/main/VGG-19.jpg?token=GHSAT0AAAAAABYAO27KKLDR3CPCMOZ4SARUY5GR4EQ)
 
 ## Extract Content:
 * Along the processing hierarchy of the network, the input image is transformed into representations that increasingly care about the actual content of the image compared to its detailed pixel values.
@@ -20,3 +20,11 @@ Alpha and beta are hyperparameters which are used to provide weights to each typ
 * To obtain a representation of the style of an input image, we use correlations between the different filter responses over the spatial extent of the feature maps. We obtain a stationary, multi-scale representaion of the input image, which captures its texture information but not the global arrangement.
 * The correlations between feature maps is known as gram matrix.
 * The layers used for calculation of gram matrix are 1_1, 2_1, 3_1, 4_1, 5_1 with varied style weight constant for each layer.
+
+## Content Loss:
+Let's say we have function Content loss which takes in three arguments as input that are content image C, generated image G and the layer L whose activation we are going to use to compute loss.<br>
+<p align='center'>
+  <b>
+    $$L_content \left( C,G,L \right) \eq  1 \div 2 \sum_{ij} \left( a \left[ L \right] \left( C \right)_ij \sub a \left[ L \right] \left( G \right)_ij \right)^2$$
+  </b>
+</p><br>
