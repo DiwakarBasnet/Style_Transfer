@@ -41,6 +41,6 @@ To get the correlation of all the channels w.r.t each other we need to calculate
 While computing style loss we use multiple activation layers, that scenarios leads us to a possibility of assigning different weightages to each sub loss provided by different layers but in most cases people give equal weightage for all layers.<br>
 <p align='center'>
   <b>
-    $$L_style \left( S,G \right) = \sum_{l=0}^L w_l \mult L_{GM} \left( S,G,l /right)$$
+    $$L_style \left( S,G \right) = \sum_{l=0}^L w_l \mult L_{GM} \left( S,G,l \right)$$
   </b>
 </p><br>
