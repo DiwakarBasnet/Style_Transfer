@@ -29,13 +29,14 @@ Let's say we have function Content loss which takes in three arguments as input 
   </b>
 </p><br>
 
-## Gram matrix:
+## Gram Matrix:
 To get the correlation of all the channels w.r.t each other we need to calculate gram matrix, we will use gram matrix to measure the degree of correlation between channels which later will act as a measure of style itself.<br>
 <p align='center'>
   <b>
     $$L_{GM} \left( S,G,L \right) =  {1 \over 4 N_L^2 M_L^2} \sum_{ij} \left( GM \left[ L \right] \left( S \right)_{ij} - GM \left[ L \right] \left( G \right)_{ij} \right)^2$$
   </b>
 </p><br>
+In simple words, a gram matrix is a matrix created by multiplying a matrix with it's own transpose. The dot product of transpose of matrix created by vector of feature maps and matrix itself gives gram matrix.
 
 ## Style Loss:
 While computing style loss we use multiple activation layers, that scenarios leads us to a possibility of assigning different weightages to each sub loss provided by different layers but in most cases people give equal weightage for all layers.<br>
