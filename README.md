@@ -28,3 +28,11 @@ Let's say we have function Content loss which takes in three arguments as input 
     $$L_content \left( C,G,L \right) =  {1 \over 2} \sum_{ij} \left( a \left[ L \right] \left( C \right)_{ij} - a \left[ L \right] \left( G \right)_{ij} \right)^2$$
   </b>
 </p><br>
+
+## Gram matrix:
+To get the correlation of all the channels w.r.t each other we need to calculate gram matrix, we will use gram matrix to measure the degree of correlation between channels which later will act as a measure of style itself. Let's denote the gram matrix of style image of layer L as GM[L](S) and gram matrix of generated image of same layer as GM[L](G) then gram matrix for layer L is given by;<br>
+<p align='center'>
+  <b>
+    $$L_GM \left( S,G,L \right) =  {1 \over 4 N_L^2 M_L^2} \sum_{ij} \left( GM \left[ L \right] \left( S \right)_{ij} - GM \left[ L \right] \left( G \right)_{ij} \right)^2$$
+  </b>
+</p><br>
