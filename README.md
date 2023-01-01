@@ -9,7 +9,7 @@ There are 2 input images namely content image and style image that are used to g
 Alpha and beta are hyperparameters which are used to provide weights to each type of loss i.e these parameters are used to control how much of content/style we want to inherit in the generated image.<br>
 
 **VGG-19**<br>
-![VGG-19 layers](https://raw.githubusercontent.com/DiwakarBasnet/Style_Transfer/main/VGG-19.jpg?token=GHSAT0AAAAAABYAO27KKLDR3CPCMOZ4SARUY5GR4EQ)
+![VGG-19 layers](https://raw.githubusercontent.com/DiwakarBasnet/Style_Transfer/main/VGG-19.jpg?token=GHSAT0AAAAAABYAO27KX2KFM5IJXH4E4YUUY5RGK5Q)
 
 ## Extract Content:
 * Along the processing hierarchy of the network, the input image is transformed into representations that increasingly care about the actual content of the image compared to its detailed pixel values.
@@ -44,6 +44,7 @@ While computing style loss we use multiple activation layers, that scenarios lea
 <p align='center'>
   <b>
     $$E_l = {1 \over 4 N_l^2 M_l^2} \sum_{ij} \left( G_{ij}^l - A_{ij}^l \right)^2$$
+    <br>
     $$L_{style} \left( a,x \right) = \sum_{l=0}^L w_l * E_l$$
   </b>
 </p><br>
