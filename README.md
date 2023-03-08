@@ -28,7 +28,7 @@ Let's say we have function Content loss which takes in three arguments as input 
     $$L_{content} \left( p,x,l \right) =  {1 \over 2} \sum_{ij} \left( F_{ij}^l - P_{ij}^l \right)^2$$
   </b>
 </p><br>
-Where $F_{ij}^l$ is the activation of the $i^{th}$ filter at position j in layer l for generated image, similarly $P_{ij}^l$ is the feature representation for content image.
+Where F is the activation of the i'th filter at position j in layer l for generated image, similarly P is the feature representation for content image.
 
 ## Gram Matrix:
 To get the correlation of all the channels w.r.t each other we need to calculate gram matrix, we will use gram matrix to measure the degree of correlation between channels which later will act as a measure of style itself.<br>
@@ -47,4 +47,4 @@ While computing style loss we use multiple activation layers, that scenarios lea
          L_{style} \left( a,x \right) = \sum_{l=0}^L w_l * E_l$$
   </b>
 </p><br>
-Where "a" and "x" are style image and generated image and $A^l$ and $G^l$ are their respective style representations in layer l.
+Where "a" and "x" are style image and generated image and A and G are their respective style representations in layer l.
