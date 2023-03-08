@@ -45,6 +45,8 @@ While computing style loss we use multiple activation layers, that scenarios lea
   <b>
     $$E_l = {1 \over 4 N_l^2 M_l^2} \sum_{ij} \left( G_{ij}^l - A_{ij}^l \right)^2$$
   </b>
+</p><br>
+<p align='center'>
   <b>
     $$L_{style} \left( a,x \right) = \sum_{l=0}^L w_l * E_l$$
   </b>
